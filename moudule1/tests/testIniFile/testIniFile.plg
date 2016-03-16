@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: testIniFile - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSPE3CE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/testIniFile.pdb" /debug /machine:I386 /out:"Debug/testIniFile.exe" /pdbtype:sept 
+.\Debug\initestmain.obj
+]
+Creating command line "link.exe @C:\Users\Admin\AppData\Local\Temp\RSPE3CE.tmp"
+<h3>Output Window</h3>
+Linking...
+initestmain.obj : error LNK2001: unresolved external symbol "int __cdecl IcyGetColor(struct HWND__ *,int,int,unsigned long &)" (?IcyGetColor@@YAHPAUHWND__@@HHAAK@Z)
+Debug/testIniFile.exe : fatal error LNK1120: 1 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+testIniFile.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

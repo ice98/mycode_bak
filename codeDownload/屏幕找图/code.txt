@@ -1,0 +1,33 @@
+VC屏幕找图源代码
+森思:写了一天，终于实现了快速找图，速度和按键精灵不相上下。按键精灵里有个FINDPIC（）函数，你指定位图文件，然后在屏幕上查找和这张图片相同的图片，返回找到图形的坐标。实现方法主要是用GetDIBits获取屏幕的位图数据，然后读出要找的bmp图片，再比较它们的位图数据……程序在某些特殊的状态下可能会找不到图，但那出现的几率很小了。（当然，要改进的话也非常容易了，今天累了，不搞啦）
+用法：先把要查找的图保存为24位色的位图格式。然后在命令行或bat中运行命令 FindBmp 图片.bmp 即可。也可以直接把要找的图片拖到FindBmp程序图标上。如果找到图片，程序会将鼠标移动到图片所在位置。
+例如：
+echo off
+FindBmp qq.bmp
+cls
+echo 看看鼠标是否已经移动到图片所在位置？
+pause
+
+
+找图动态链接库FindPic.dll 附VC6使用源代码.rar(右键—迅雷) 注：FindPic.dll 在压缩包的Release目录下
+下面贴出使用FindPic.dll 的代码
+int cx,cy;//找到图片的横坐标cx和纵坐标cy
+CString temp_x,temp_y;//
+CString msg="a.bmp";//要查找的bmp文件（24位色位图）
+HINSTANCE hDllInst = LoadLibrary("FindPic.dll");
+if(hDllInst)
+{
+typedef void (*MYFUNC)(CString,int*,int*);
+MYFUNC youFuntionNameAlias = NULL; // youFuntionNameAlias 函数别名
+youFuntionNameAlias = (MYFUNC)GetProcAddress(hDllInst,"FindPic");
+// youFuntionName 在DLL中声明的函数名
+if(youFuntionNameAlias)
+{
+youFuntionNameAlias(msg,&cx,&cy);
+temp_x.Format("%d",cx);
+temp_y.Format("%d",cy);
+AfxMessageBox("横坐标"+temp_x+" 纵坐标"+temp_y);
+SetCursorPos(cx,cy);//移动鼠标到图片位置
+}
+FreeLibrary(hDllInst);
+}

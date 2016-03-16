@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: module2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP5560.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\srcs" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/module2.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\mycode\module2\srcs\IceColor.cpp"
+]
+Creating command line "cl.exe @C:\Users\Admin\AppData\Local\Temp\RSP5560.tmp" 
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP5561.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/module2.pdb" /debug /machine:I386 /out:"Debug/module2.exe" /pdbtype:sept 
+.\Debug\module2.obj
+.\Debug\module2Dlg.obj
+.\Debug\StdAfx.obj
+.\Debug\DIBAPI.OBJ
+.\Debug\IceColor.obj
+.\Debug\IceErr.obj
+.\Debug\IceGlobal.obj
+.\Debug\IceImp.obj
+.\Debug\IceWnd.obj
+.\Debug\module2.res
+".\dll\GDI+\GdiPlus.lib"
+]
+Creating command line "link.exe @C:\Users\Admin\AppData\Local\Temp\RSP5561.tmp"
+<h3>Output Window</h3>
+Compiling...
+IceColor.cpp
+e:\mycode\module2\srcs\findproc.h(322) : warning C4101: 'e' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+module2.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

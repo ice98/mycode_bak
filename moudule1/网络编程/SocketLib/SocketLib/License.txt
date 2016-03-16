@@ -1,0 +1,14 @@
+[ Socketlib license ]
+
+Copyright (C) 2005-2007 by Zhang bao yuan(bolidezhang@gmail.com).
+All rights reserved.
+
+This copy of Socketlib is free software; you can redistribute it and/or modify 
+it under the terms of the GNU General Public License version 2 as 
+published by the Free Software Foundation.
+If you do not wish to be bound by the terms of the GPL, Please contact Author.
+
+Author Contact information:
+
+MSN/gtalk: bolidezhang@gmail.com
+Email: bolidezhang@gmail.com

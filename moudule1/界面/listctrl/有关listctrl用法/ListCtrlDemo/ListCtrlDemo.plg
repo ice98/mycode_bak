@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ListCtrlDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP69.tmp" with contents
+[
+/nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ListCtrlDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VCÔ´Âë\ListCtrlDemo\ListCtrlDemo\ListCtrlDemoDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP69.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ListCtrlDemo.pdb" /debug /machine:I386 /out:"Debug/ListCtrlDemo.exe" /pdbtype:sept 
+".\Debug\HistoryEdit.obj"
+".\Debug\HyperLink.obj"
+".\Debug\ListCtrlDemo.obj"
+".\Debug\ListCtrlDemoDlg.obj"
+".\Debug\ListCtrlStylesDlg.obj"
+".\Debug\ListCtrlStylesExDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ListCtrlDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP6A.tmp"
+<h3>Output Window</h3>
+Compiling...
+ListCtrlDemoDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ListCtrlDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

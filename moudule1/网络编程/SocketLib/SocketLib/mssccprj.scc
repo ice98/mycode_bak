@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[SocketLib.vcproj]
+SCC_Aux_Path = "\\sh-hf-vss-01\VSS-CGA\"
+SCC_Project_Name = "$/doc&source/platform/server/SocketLib/SocketLib", GJLBAAAA

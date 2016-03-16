@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: srcs - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP6140.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\\" /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_AFXDLL" /D "_MFC" /Fp"Debug/srcs.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\mycode\moudule\srcs\IceDll.cpp"
+"E:\mycode\moudule\srcs\IceErr.cpp"
+"E:\mycode\moudule\srcs\IceFile.cpp"
+"E:\mycode\moudule\srcs\IceGlobal.cpp"
+"E:\mycode\moudule\srcs\IceNode.cpp"
+"E:\mycode\moudule\srcs\IceProc.cpp"
+"E:\mycode\moudule\srcs\IcePub.cpp"
+"E:\mycode\moudule\srcs\IceSocket.cpp"
+"E:\mycode\moudule\srcs\IceWnd.cpp"
+"E:\mycode\moudule\srcs\srcmain.cpp"
+"E:\mycode\moudule\srcs\IceColor.cpp"
+]
+Creating command line "cl.exe @C:\Users\Admin\AppData\Local\Temp\RSP6140.tmp" 
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP6141.tmp" with contents
+[
+/nologo /subsystem:console /incremental:yes /pdb:"Debug/srcs.pdb" /debug /machine:I386 /out:"Debug/srcs.exe" /pdbtype:sept 
+.\Debug\IceDll.obj
+.\Debug\IceErr.obj
+.\Debug\IceFile.obj
+.\Debug\IceGlobal.obj
+.\Debug\IceNode.obj
+.\Debug\IceProc.obj
+.\Debug\IcePub.obj
+.\Debug\IceSocket.obj
+.\Debug\IceWnd.obj
+.\Debug\srcmain.obj
+.\Debug\IceColor.obj
+]
+Creating command line "link.exe @C:\Users\Admin\AppData\Local\Temp\RSP6141.tmp"
+<h3>Output Window</h3>
+Compiling...
+IceDll.cpp
+IceErr.cpp
+IceFile.cpp
+IceGlobal.cpp
+IceNode.cpp
+IceProc.cpp
+IcePub.cpp
+IceSocket.cpp
+e:\mycode\moudule\srcs\icesocket.h(33) : error C2065: 'SOCKET' : undeclared identifier
+e:\mycode\moudule\srcs\icesocket.h(33) : error C2146: syntax error : missing ')' before identifier 'socket'
+e:\mycode\moudule\srcs\icesocket.h(33) : error C2059: syntax error : ')'
+e:\mycode\moudule\srcs\icesocket.h(34) : error C2146: syntax error : missing ')' before identifier 'socket'
+e:\mycode\moudule\srcs\icesocket.h(34) : error C2059: syntax error : ')'
+e:\mycode\moudule\srcs\icesocket.h(35) : error C2146: syntax error : missing ')' before identifier 'socket'
+e:\mycode\moudule\srcs\icesocket.h(35) : error C2059: syntax error : ')'
+e:\mycode\moudule\srcs\icesocket.h(36) : error C2146: syntax error : missing ')' before identifier 'socket'
+e:\mycode\moudule\srcs\icesocket.h(36) : error C2059: syntax error : ')'
+e:\mycode\moudule\srcs\icesocket.h(37) : error C2146: syntax error : missing ')' before identifier 'socket'
+e:\mycode\moudule\srcs\icesocket.h(37) : error C2059: syntax error : ')'
+e:\mycode\moudule\srcs\icesocket.h(38) : error C2146: syntax error : missing ')' before identifier 'socket'
+e:\mycode\moudule\srcs\icesocket.h(38) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(6) : error C2065: 'WSAGetLastError' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(11) : error C2065: 'WSANOTINITIALISED' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(11) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(16) : error C2065: 'WSAENETDOWN' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(16) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(21) : error C2065: 'WSAEFAULT' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(21) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(27) : error C2065: 'WSAENOTCONN' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(27) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(32) : error C2065: 'WSAEINTR' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(32) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(37) : error C2065: 'WSAEINPROGRESS' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(37) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(43) : error C2065: 'WSAENETRESET' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(43) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(49) : error C2065: 'WSAENOTSOCK' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(49) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(54) : error C2065: 'WSAEOPNOTSUPP' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(54) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(62) : error C2065: 'WSAESHUTDOWN' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(62) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(68) : error C2065: 'WSAEINVAL' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(68) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(75) : error C2065: 'WSAEWOULDBLOCK' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(75) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(81) : error C2065: 'WSAEMSGSIZE' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(81) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(87) : error C2065: 'WSAETIMEDOUT' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(87) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(93) : error C2065: 'WSAECONNRESET' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(93) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(100) : error C2065: 'WSASYSNOTREADY' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(100) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(105) : error C2065: 'WSAVERNOTSUPPORTED' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(105) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(110) : error C2065: 'WSAEPROCLIM' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(110) : error C2051: case expression not constant
+E:\mycode\moudule\srcs\IceSocket.cpp(119) : warning C4065: switch statement contains 'default' but no 'case' labels
+E:\mycode\moudule\srcs\IceSocket.cpp(130) : error C2065: 'WSADATA' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(130) : error C2146: syntax error : missing ';' before identifier 'wsa'
+E:\mycode\moudule\srcs\IceSocket.cpp(130) : error C2065: 'wsa' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(131) : error C2065: 'WSAStartup' : undeclared identifier
+E:\mycode\moudule\srcs\IceSocket.cpp(140) : error C2146: syntax error : missing ')' before identifier 'socket'
+E:\mycode\moudule\srcs\IceSocket.cpp(140) : error C2086: 'BindSocket' : redefinition
+E:\mycode\moudule\srcs\IceSocket.cpp(140) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(141) : error C2143: syntax error : missing ';' before '{'
+E:\mycode\moudule\srcs\IceSocket.cpp(141) : error C2447: missing function header (old-style formal list?)
+E:\mycode\moudule\srcs\IceSocket.cpp(157) : error C2146: syntax error : missing ')' before identifier 'socket'
+E:\mycode\moudule\srcs\IceSocket.cpp(157) : error C2086: 'ListenSocket' : redefinition
+E:\mycode\moudule\srcs\IceSocket.cpp(157) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(158) : error C2143: syntax error : missing ';' before '{'
+E:\mycode\moudule\srcs\IceSocket.cpp(158) : error C2447: missing function header (old-style formal list?)
+E:\mycode\moudule\srcs\IceSocket.cpp(168) : error C2146: syntax error : missing ')' before identifier 'socket'
+E:\mycode\moudule\srcs\IceSocket.cpp(168) : error C2086: 'AcceptSocket' : redefinition
+E:\mycode\moudule\srcs\IceSocket.cpp(168) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(169) : error C2143: syntax error : missing ';' before '{'
+E:\mycode\moudule\srcs\IceSocket.cpp(169) : error C2447: missing function header (old-style formal list?)
+E:\mycode\moudule\srcs\IceSocket.cpp(185) : error C2146: syntax error : missing ')' before identifier 'socket'
+E:\mycode\moudule\srcs\IceSocket.cpp(185) : error C2086: 'ConnectSocket' : redefinition
+E:\mycode\moudule\srcs\IceSocket.cpp(185) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(186) : error C2143: syntax error : missing ';' before '{'
+E:\mycode\moudule\srcs\IceSocket.cpp(186) : error C2447: missing function header (old-style formal list?)
+E:\mycode\moudule\srcs\IceSocket.cpp(202) : error C2146: syntax error : missing ')' before identifier 'socket'
+E:\mycode\moudule\srcs\IceSocket.cpp(202) : error C2086: 'RecvFromSocket' : redefinition
+E:\mycode\moudule\srcs\IceSocket.cpp(202) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(203) : error C2143: syntax error : missing ';' before '{'
+E:\mycode\moudule\srcs\IceSocket.cpp(203) : error C2447: missing function header (old-style formal list?)
+E:\mycode\moudule\srcs\IceSocket.cpp(220) : error C2146: syntax error : missing ')' before identifier 'socket'
+E:\mycode\moudule\srcs\IceSocket.cpp(220) : error C2086: 'SendToSocket' : redefinition
+E:\mycode\moudule\srcs\IceSocket.cpp(220) : error C2059: syntax error : ')'
+E:\mycode\moudule\srcs\IceSocket.cpp(221) : error C2143: syntax error : missing ';' before '{'
+E:\mycode\moudule\srcs\IceSocket.cpp(221) : error C2447: missing function header (old-style formal list?)
+IceWnd.cpp
+srcmain.cpp
+IceColor.cpp
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+srcs.exe - 84 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

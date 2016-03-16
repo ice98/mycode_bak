@@ -1,0 +1,293 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ListCtrlDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ListCtrlDemo.ico"
+IDI_IMAGE               ICON    DISCARDABLE     "res\\Image.ico"
+IDI_CONFIG              ICON    DISCARDABLE     "res\\Config.ico"
+IDI_FONT                ICON    DISCARDABLE     "res\\Font.ico"
+IDI_APP                 ICON    DISCARDABLE     "res\\Application.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ListCtrlDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,14,20,20
+    LTEXT           "ListCtrlDemo Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,30,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Matt Weagle",IDC_EMAIL,40,20,119,8
+END
+
+IDD_STYLES DIALOG DISCARDABLE  0, 0, 150, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "List Control Styles"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,138,50,14
+    CONTROL         "List1",IDC_LIST_STYLES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,136,126
+END
+
+IDD_STYLES_EX DIALOGEX 0, 0, 150, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "List Control Extended Styles"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,186,50,14
+    CONTROL         "List1",IDC_LIST_STYLES_EX,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,136,126
+    CONTROL         "&Use Custom Hot Cursor",IDC_USE_HOTCURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,141,86,10
+    LTEXT           "goto Microsoft.",IDC_VERSION_INFO,37,166,52,10,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "For more information about shell versions, ",IDC_STATIC,
+                    8,158,107,17
+END
+
+IDD_LISTCTRLDEMO_DIALOG DIALOGEX 0, 0, 321, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ListCtrlDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_CTRL,"SysListView32",WS_BORDER | 
+                    WS_TABSTOP,7,26,219,130
+    EDITTEXT        IDC_LIST_CTRL_NUMITEMS,235,32,40,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    PUSHBUTTON      "&Refresh",IDC_UPDATE_ITEM_COUNT,284,32,30,14
+    EDITTEXT        IDC_LIST_CTRL_SELECTITEM,235,58,40,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | ES_NUMBER
+    PUSHBUTTON      "Se&lect",IDC_ITEM_SELECT,284,58,30,14
+    PUSHBUTTON      "&Styles...",IDC_STYLES,239,84,75,14
+    PUSHBUTTON      "&Extended Styles...",IDC_STYLES_EX,239,104,75,14
+    PUSHBUTTON      "&Get Selected",IDC_GET_SELECTED,239,124,75,14
+    CONTROL         "Background Image?",IDC_BK_IMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,240,146,80,10
+    EDITTEXT        IDC_LOG,20,170,283,56,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&Clear Log",IDC_CLEAR_LOG,231,228,75,14
+    DEFPUSHBUTTON   "OK",IDOK,239,254,75,14
+    CONTROL         "Tab1",IDC_LIST_CTRL_MODE,"SysTabControl32",0x0,7,7,219,
+                    15
+    LTEXT           "Number of items:",IDC_STATIC,235,22,77,8
+    GROUPBOX        "Log",IDC_STATIC,10,160,298,86
+    LTEXT           "Select Item:",IDC_STATIC,235,48,59,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ListCtrlDemo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 2\0"
+            VALUE "InternalName", "ListCtrlDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ListCtrlDemo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ListCtrlDemo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_STYLES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_STYLES_EX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_LISTCTRLDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_IMAGES_NORMAL       BITMAP  DISCARDABLE     "res\\images_n.bmp"
+IDB_IMAGES_SMALL        BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_LISTCTRL_BK         BITMAP  DISCARDABLE     "res\\gradient.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HOTCURSOR           CURSOR  DISCARDABLE     "res\\Ber_Hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ListCtrlDemo..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ListCtrlDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
